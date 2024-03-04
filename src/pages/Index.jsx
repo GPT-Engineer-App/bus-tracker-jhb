@@ -1,4 +1,4 @@
-import { Box, Text, Heading, Flex, Input, Button, VStack, HStack, Image, useToast } from "@chakra-ui/react";
+import { Box, Text, Heading, Flex, Select, Input, Button, VStack, HStack, Image, useToast } from "@chakra-ui/react";
 import { FaBus, FaMapMarkedAlt, FaRegClock, FaRegCalendarAlt } from "react-icons/fa";
 
 const Index = () => {
@@ -36,7 +36,17 @@ const Index = () => {
             <FaBus color="green" />
             <Text fontSize="lg">Track Your Bus</Text>
           </HStack>
-          <Input placeholder="Enter bus number..." />
+          <Select placeholder="Select bus number...">
+            <option value="1234">1234</option>
+            <option value="2468">2468</option>
+            <option value="0987">0987</option>
+            <option value="6543">6543</option>
+            <option value="7890">7890</option>
+            <option value="2222">2222</option>
+            <option value="3333">3333</option>
+            <option value="4444">4444</option>
+            <option value="5555">5555</option>
+          </Select>
           <Button leftIcon={<FaMapMarkedAlt />} colorScheme="green" onClick={handleTrackBus}>
             Track Bus
           </Button>
